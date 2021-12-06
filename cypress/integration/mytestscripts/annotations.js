@@ -1,6 +1,8 @@
 describe('Demo annotation', () => {
     before(() => {
 
+
+        console.log('my before test suite')
         console.log('my before test suite')
 
     })
