@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-11-30T13:48:23.918Z",
+    "end": "2021-11-30T13:48:43.653Z",
+    "duration": 19735,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "66ce930c-8470-45f0-bf5b-a7cc71418249",
+      "title": "",
+      "fullFile": "cypress/integration/mytestscripts/demoLaunch.js",
+      "file": "cypress/integration/mytestscripts/demoLaunch.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f4fa3a3a-2e66-4a86-9e58-cf713184d0e3",
+          "title": "Check suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "open flipkart",
+              "fullTitle": "Check suite open flipkart",
+              "timedOut": null,
+              "duration": 9592,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.flipkart.com/'); //   cy.get('input[name=\"q\"]').type('Iphone x');\nlet name = \"hello\";\nconsole.log(name.startsWith(\"hel\"));\nif (name.startsWith(\"hel\")) {\n  cy.get('input[name=\"q\"]').type('Iphone x');\n}\ncy.get(\"button[type='submit']\").click();",
+              "err": {},
+              "uuid": "5bcca886-250f-4dfd-8b06-273cc4684be1",
+              "parentUUID": "f4fa3a3a-2e66-4a86-9e58-cf713184d0e3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5bcca886-250f-4dfd-8b06-273cc4684be1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9592,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.0.1"
+    },
+    "marge": {
+      "options": {
+        "reporterDir": "Cypress/reports",
+        "reportFilename": "report",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "6.0.1"
+    }
+  }
+}

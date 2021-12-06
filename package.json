@@ -1,0 +1,21 @@
+{
+  "name": "cypress_project",
+  "version": "1.0.0",
+  "description": "this is my first cypress project",
+  "main": "index.js",
+  "scripts": {
+    "cypress:start": "cypress open",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run_test": "./node_modules/.bin/cypress run --headed --spec ./cypress/integration/mytestscripts/*.js --browser chrome",
+    "merge": "mochawesome-merge cypress/mochawesome-report/*.json > cypress/mochawesome-report/output.json",
+    "generate_mochawesome_report": "marge cypress/mochawesome-report/output.json --reportDir ./ --inline",
+    "run_test_generate_report": "npm run run_test && npm run merge && npm run generate_mochawesome_report"
+  },
+  "author": "apurva",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^8.6.0",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.0"
+  }
+}
